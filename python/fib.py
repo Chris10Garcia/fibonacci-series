@@ -28,6 +28,7 @@ def main(n):
     elif n == 1:
         return 1
     
+    # since the array covers the 0, and 1nth elements, anything past that needs to take into consideraiton
     n = n - 1
     for i in range(1, n + 1):
         value = fib[i] + fib[i-1]
